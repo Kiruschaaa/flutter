@@ -21,7 +21,7 @@ class NotesPage extends StatefulWidget {
 class _NotesPageState extends State<NotesPage> {
   TextEditingController controller = TextEditingController();
   List<String> notes = [];
-  int editIndex = -1; // -1 значит что мы ничего не редактируем
+  int editIndex = -1;
 
   void saveNote() {
     if (controller.text.isEmpty) return;
